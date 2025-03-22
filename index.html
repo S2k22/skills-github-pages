@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Details</a></li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Brief intro about yourself.</p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML & CSS</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <!-- Add your skills here -->
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+          <div class="card">
+            <img src="assets/project1.png" alt="Project 1 Screenshot" />
+            <h3>Project 1</h3>
+            <p>Short description of project 1.</p>
+            <a href="https://github.com/S2k22/project1" target="_blank">View Project</a>
+          </div>
+          <div class="card">
+            <img src="assets/project2.png" alt="Project 2 Screenshot" />
+            <h3>Project 2</h3>
+            <p>Short description of project 2.</p>
+            <a href="https://github.com/S2k22/project2" target="_blank">View Project</a>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Details</h2>
+        <p>Email: your.email@example.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">Your LinkedIn</a></p>
+      </section>
+    </main>
+  </div>
+
+  <!-- Smooth Scrolling Script -->
+  <script>
+    document.querySelectorAll('.sidebar a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
