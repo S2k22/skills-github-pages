@@ -4,11 +4,20 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background: url('../images/background.jpg') no-repeat center center fixed;
-  background-size: cover;
+  /* Animated gradient background */
+  background: linear-gradient(270deg, #ff7e5f, #feb47b, #ff7e5f);
+  background-size: 600% 600%;
+  animation: gradientAnimation 16s ease infinite;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
   color: #333;
+}
+
+/* Keyframes for animated gradient */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* Navigation */
@@ -17,13 +26,13 @@ nav {
   top: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
 nav ul {
-  display: flex;
   list-style: none;
+  display: flex;
   justify-content: center;
   margin: 0;
   padding: 1rem;
@@ -39,31 +48,22 @@ nav ul li a {
   font-weight: bold;
 }
 
-/* Container */
+/* Container for content */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 20px; /* top padding avoids nav overlay */
+  padding: 100px 20px; /* extra top padding to account for fixed nav */
 }
 
 /* Section Styles */
 section {
   padding: 60px 0;
-  background-color: rgba(255, 255, 255, 0.85); /* semi-transparent background for readability */
+  background-color: rgba(255, 255, 255, 0.85); /* translucent overlay for readability */
   margin: 2rem 0;
   border-radius: 8px;
 }
 
-/* Profile Image */
-.profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 1rem;
-}
-
-/* Card Container */
+/* Card Container & Card Styles */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -71,18 +71,17 @@ section {
   margin-top: 2rem;
 }
 
-/* Card Styles */
 .card {
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
@@ -93,5 +92,6 @@ section {
 .card-content {
   padding: 1rem;
 }
+
 
 
