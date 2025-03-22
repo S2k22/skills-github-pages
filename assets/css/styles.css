@@ -103,23 +103,24 @@ section {
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
   font-size: 0.9rem;
-  /* Default fallback color if needed */
-  background: rgba(255, 255, 255, 0.2);
+  color: #fff;  /* white text for contrast */
+  background: rgba(200, 200, 200, 0.1);  /* fallback */
 }
 
-/* Different colors for each bubble (applies within each skill-card) */
-.skill-bubble:nth-child(1) {
-  background: #ff7e5f;
+/* Updated muted, transparent colors for bubbles */
+.bubble1 {
+  background: rgba(180, 80, 80, 0.7);    /* Muted red */
 }
-.skill-bubble:nth-child(2) {
-  background: #feb47b;
+.bubble2 {
+  background: rgba(180, 120, 80, 0.7);    /* Muted orange/brown */
 }
-.skill-bubble:nth-child(3) {
-  background: #33ff57;
+.bubble3 {
+  background: rgba(80, 140, 100, 0.7);    /* Muted green */
 }
-.skill-bubble:nth-child(4) {
-  background: #3357ff;
+.bubble4 {
+  background: rgba(80, 100, 180, 0.7);    /* Muted blue */
 }
+
 
 /* 6. Experience Section */
 .experience-list {
