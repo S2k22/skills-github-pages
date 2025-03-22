@@ -175,15 +175,19 @@ section {
 }
 
 .card-image {
-  flex: 0 0 60%;
-  overflow: hidden;
+  /* This ensures a 1333:908 aspect ratio */
+  aspect-ratio: 1333 / 908;
+  width: 100%;       /* The card container or grid will limit the overall width */
+  overflow: hidden;  /* Ensures any overflow is clipped */
 }
 
 .card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
+
 
 .card-content {
   flex: 0 0 40%;
