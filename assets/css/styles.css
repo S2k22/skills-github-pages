@@ -287,6 +287,19 @@ section {
   }
 }
 
+@media (min-width: 2560px) {
+  .background-apple {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    width: 700px;       /* Fixed width as per your old parameter */
+    pointer-events: none;
+    z-index: 9999;
+  }
+}
+
+
 
 /* Decorative image styled as a background element (does not affect layout) */
 .background-decorative {
@@ -324,6 +337,20 @@ section {
     top: 30%;       /* Default vertical center */
     left: 20px    /* Default horizontal offset */
     width: 30vw;    /* Or adjust as needed */
+  }
+}
+
+
+
+@media (min-width: 2560px) {
+  .background-apple {
+    position: absolute;
+    top: 150%;
+    left: 30px;
+    transform: translateY(-50%);
+    width: 850px;       /* Fixed width as per your old parameter */
+    pointer-events: none;
+    z-index: 9999;
   }
 }
 
