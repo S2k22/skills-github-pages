@@ -40,8 +40,8 @@ nav ul li {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
-  padding: 0.65rem 1.3rem; /* Increased padding by ~30% */
-  font-size: 1.3rem;       /* Increased font size by ~30% */
+  padding: 0.65rem 1.3rem;
+  font-size: 1.3rem;
   border-radius: 4px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -56,57 +56,45 @@ nav ul li {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 20px; /* Reduced top padding by 20% (from 100px to 80px) */
+  padding: 80px 20px;
 }
 
-/* 4. Section Styling (reduced spacing by ~20%) */
+/* 4. Section Styling */
 section {
-  padding: 41px 0; /* reduced from 51px to 41px */
-  margin: 1.36rem 0; /* reduced from 1.7rem to 1.36rem */
-  /* No section background overlays */
+  padding: 41px 0;
+  margin: 1.36rem 0;
 }
 
-/* Increase text size in About Me (you can keep this or adjust as needed) */
-#about p {
-  font-size: 1.8rem;
-}
-
-/* 
-   4a. Overriding the About section to be taller, centered, 
-   and allowing for a left-side image on top 
-*/
+/* About Section: Plain centered text (no card) */
 #about {
-  position: relative;         /* Needed for absolutely positioned .background-left */
-  display: flex;              /* Allows centering of content */
-  align-items: center;        /* Vertically center the .about-box */
-  justify-content: center;    /* Horizontally center the .about-box */
-  min-height: 600px;          /* Increase for a taller area */
-  margin: 0;                  /* Override default section margin */
-  padding: 0;                 /* Override default section padding */
+  position: relative;  /* For positioning .background-left */
+  min-height: 600px;   /* Taller area */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-/* A "box" for your About content, centered with a semi-transparent background */
-.about-box {
+#about .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
-  text-align: center;
-  z-index: 2; /* Ensure it sits above the background image */
+  /* No background, border, or card styling */
+  z-index: 2; /* Ensure text appears above decorative image */
 }
 
-/* Left-side image on top, slightly below center */
+/* Decorative left-side image (pure decoration, not part of About content) */
 .background-left {
   position: absolute;
-  left: 50px;                 /* Adjust horizontally as needed */
-  top: 60%;                   /* Slightly below the halfway mark (50%) */
-  transform: translateY(-50%);/* Centers the image vertically on that 'top' value */
-  width: 400px;               /* Adjust to control the image’s size */
+  left: 50px;           /* Adjust horizontal positioning as needed */
+  top: 60%;             /* Slightly below center */
+  transform: translateY(-50%);
+  width: 400px;         /* Adjust size as needed */
   opacity: 1;
-  pointer-events: none;       /* Make it non-interactive (unclickable) */
-  z-index: 9999;             /* On top of everything else */
+  pointer-events: none; /* Not interactive */
+  z-index: 1;           /* Behind the text */
 }
 
 /* 5. Skills Section as Cards */
@@ -151,22 +139,12 @@ section {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* Use only 5 bubble colors */
-.bubble1 {
-  background: rgba(180, 80, 80, 0.7);
-}
-.bubble2 {
-  background: rgba(180, 120, 80, 0.7);
-}
-.bubble3 {
-  background: rgba(80, 140, 100, 0.7);
-}
-.bubble4 {
-  background: rgba(80, 100, 180, 0.7);
-}
-.bubble5 {
-  background: rgba(160, 80, 120, 0.7);
-}
+/* Bubble Colors */
+.bubble1 { background: rgba(180, 80, 80, 0.7); }
+.bubble2 { background: rgba(180, 120, 80, 0.7); }
+.bubble3 { background: rgba(80, 140, 100, 0.7); }
+.bubble4 { background: rgba(80, 100, 180, 0.7); }
+.bubble5 { background: rgba(160, 80, 120, 0.7); }
 
 /* 6. Experience Section */
 .experience-list {
@@ -188,12 +166,11 @@ section {
   margin-top: 2rem;
 }
 
-/* Project Cards with an enforced aspect ratio for images */
 .card {
   display: flex;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.1);
-  border: 3px solid rgba(255, 255, 255, 0.3); /* Uniform gray border */
+  border: 3px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease, border-color 0.3s ease;
@@ -207,10 +184,10 @@ section {
 }
 
 .card-image {
-  /* This ensures a 1333:908 aspect ratio */
+  /* Ensures a 1333:908 aspect ratio */
   aspect-ratio: 1333 / 908;
   width: 100%;
-  overflow: hidden;  /* Ensures any overflow is clipped */
+  overflow: hidden;
 }
 
 .card-image img {
@@ -288,6 +265,7 @@ section {
   pointer-events: none;
   z-index: 9999;
 }
+
 
 
 
