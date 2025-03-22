@@ -254,7 +254,8 @@ section {
   top: 50%;
   right: 50px;
   transform: translateY(-50%);
-  width: 700px;
+  width: 30vw;
+  max-width: 700px;
   opacity: 1;
   pointer-events: none;
   z-index: 9999;
@@ -266,7 +267,8 @@ section {
   left: 40px;             /* Adjust horizontal position as needed */
   top: 100%;               /* Adjust vertical position as needed */
   transform: translateY(-50%);
-  width: 800px;
+  width: 30vw;
+  max-width: 700px;
   opacity: 1; /* Adjust size as needed */
   pointer-events: none;   /* Non-interactive */
   z-index: 9999;          /* On top of other elements */
