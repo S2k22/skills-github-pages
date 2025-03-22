@@ -110,6 +110,7 @@ section {
 /* 7. Contact Section Adjustments */
 .contact-container {
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .social-buttons {
@@ -119,17 +120,40 @@ section {
   gap: 2rem;
 }
 
-/* Social button logos styling */
-.social-btn img {
-  width: 48px;  /* Increase logo size as needed */
-  height: 48px;
-  transition: transform 0.3s ease, filter 0.3s ease;
+/* Social button logos with highlight effect */
+.social-btn {
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 4px;
+  padding: 0.25rem; /* small padding for the highlight border */
 }
 
-.social-btn:hover img {
+.social-btn:hover {
   transform: scale(1.1);
-  filter: brightness(1.2);
+  box-shadow: 0 0 8px #feb47b;
 }
+
+.social-btn img {
+  width: 48px;
+  height: 48px;
+}
+
+/* Email link styling with highlight effect */
+.contact-email a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.contact-email a:hover {
+  transform: scale(1.1);
+  color: #feb47b;
+  box-shadow: 0 0 8px #feb47b;
+}
+
 
 
 
