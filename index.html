@@ -1,71 +1,175 @@
-<!-- Projects Section -->
-<section id="projects">
-  <div class="container">
-    <h2>Projects</h2>
-    <div class="card-container">
-      <!-- Project Card 1 -->
-      <a href="https://example.com/project1" class="card-link" target="_blank">
-        <div class="card">
-          <div class="card-image">
-            <img src="assets/images/project1.jpg" alt="Project 1" />
-          </div>
-          <div class="card-content">
-            <h3>Project One</h3>
-            <p>Short description of project one.</p>
-          </div>
-        </div>
-      </a>
-      <!-- Project Card 2 -->
-      <a href="https://example.com/project2" class="card-link" target="_blank">
-        <div class="card">
-          <div class="card-image">
-            <img src="assets/images/project2.jpg" alt="Project 2" />
-          </div>
-          <div class="card-content">
-            <h3>Project Two</h3>
-            <p>Short description of project two.</p>
-          </div>
-        </div>
-      </a>
-      <!-- Project Card 3 -->
-      <a href="https://example.com/project3" class="card-link" target="_blank">
-        <div class="card">
-          <div class="card-image">
-            <img src="assets/images/project3.jpg" alt="Project 3" />
-          </div>
-          <div class="card-content">
-            <h3>Project Three</h3>
-            <p>Short description of project three.</p>
-          </div>
-        </div>
-      </a>
-      <!-- Project Card 4 -->
-      <a href="https://example.com/project4" class="card-link" target="_blank">
-        <div class="card">
-          <div class="card-image">
-            <img src="assets/images/project4.jpg" alt="Project 4" />
-          </div>
-          <div class="card-content">
-            <h3>Project Four</h3>
-            <p>Short description of project four.</p>
-          </div>
-        </div>
-      </a>
-      <!-- Project Card 5 -->
-      <a href="https://example.com/project5" class="card-link" target="_blank">
-        <div class="card">
-          <div class="card-image">
-            <img src="assets/images/project5.jpg" alt="Project 5" />
-          </div>
-          <div class="card-content">
-            <h3>Project Five</h3>
-            <p>Short description of project five.</p>
-          </div>
-        </div>
-      </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Portfolio</title>
+  <!-- Import Montserrat font from Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about" class="nav-btn">About</a></li>
+      <li><a href="#skills" class="nav-btn">Skills</a></li>
+      <li><a href="#projects" class="nav-btn">Projects</a></li>
+      <li><a href="#experience" class="nav-btn">Experience</a></li>
+      <li><a href="#contact" class="nav-btn">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Welcome to my portfolio! I am passionate about web development and design.</p>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Skills Section (as Cards with Bubbles) -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skill-cards-container">
+        <!-- Skill Card 1 -->
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <div class="skill-bubbles">
+            <span class="skill-bubble">HTML</span>
+            <span class="skill-bubble">CSS</span>
+            <span class="skill-bubble">JavaScript</span>
+            <span class="skill-bubble">React</span>
+          </div>
+        </div>
+        <!-- Skill Card 2 -->
+        <div class="skill-card">
+          <h3>Backend</h3>
+          <div class="skill-bubbles">
+            <span class="skill-bubble">Node.js</span>
+            <span class="skill-bubble">Express</span>
+            <span class="skill-bubble">Python</span>
+            <span class="skill-bubble">Django</span>
+          </div>
+        </div>
+        <!-- Skill Card 3 -->
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <div class="skill-bubbles">
+            <span class="skill-bubble">Git</span>
+            <span class="skill-bubble">GitHub</span>
+            <span class="skill-bubble">Webpack</span>
+            <span class="skill-bubble">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section with Clickable Cards -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="card-container">
+        <!-- Project Card 1 -->
+        <a href="https://example.com/project1" class="card-link" target="_blank">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets/images/project1.jpg" alt="Project 1" />
+            </div>
+            <div class="card-content">
+              <h3>Project One</h3>
+              <p>Short description of project one.</p>
+            </div>
+          </div>
+        </a>
+        <!-- Project Card 2 -->
+        <a href="https://example.com/project2" class="card-link" target="_blank">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets/images/project2.jpg" alt="Project 2" />
+            </div>
+            <div class="card-content">
+              <h3>Project Two</h3>
+              <p>Short description of project two.</p>
+            </div>
+          </div>
+        </a>
+        <!-- Project Card 3 -->
+        <a href="https://example.com/project3" class="card-link" target="_blank">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets/images/project3.jpg" alt="Project 3" />
+            </div>
+            <div class="card-content">
+              <h3>Project Three</h3>
+              <p>Short description of project three.</p>
+            </div>
+          </div>
+        </a>
+        <!-- Project Card 4 -->
+        <a href="https://example.com/project4" class="card-link" target="_blank">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets/images/project4.jpg" alt="Project 4" />
+            </div>
+            <div class="card-content">
+              <h3>Project Four</h3>
+              <p>Short description of project four.</p>
+            </div>
+          </div>
+        </a>
+        <!-- Project Card 5 -->
+        <a href="https://example.com/project5" class="card-link" target="_blank">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets/images/project5.jpg" alt="Project 5" />
+            </div>
+            <div class="card-content">
+              <h3>Project Five</h3>
+              <p>Short description of project five.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section (after Projects) -->
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-list">
+        <div class="experience-item">
+          <h3>Job Title</h3>
+          <p>Company Name, Duration</p>
+          <p>Brief description of responsibilities and achievements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container contact-container">
+      <h2>Contact</h2>
+      <div class="social-buttons">
+        <a href="https://www.linkedin.com/in/yourprofile" class="social-btn" target="_blank">
+          <img src="assets/images/linkedin.png" alt="LinkedIn Logo" />
+        </a>
+        <a href="https://github.com/yourusername" class="social-btn" target="_blank">
+          <img src="assets/images/github.png" alt="GitHub Logo" />
+        </a>
+      </div>
+      <p class="contact-email">
+        <a href="mailto:your.email@example.com">your.email@example.com</a>
+      </p>
+    </div>
+  </section>
+</body>
+</html>
+
 
 
 
