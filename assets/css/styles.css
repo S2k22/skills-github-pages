@@ -166,7 +166,7 @@ section {
 .card {
   display: flex;
   flex-direction: column;
-  height: 400px; /* Adjust as needed */
+  min-height: 400px; /* Use min-height instead of fixed height */
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
@@ -174,9 +174,10 @@ section {
   animation: cardFadeIn 0.6s ease-out forwards;
   animation-delay: var(--animation-delay, 0s);
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-  will-change: transform; /* Hint for smoother animation */
-  cursor: pointer;        /* Indicates that the card is interactive */
+  will-change: transform; /* Helps the browser optimize the hover transform */
+  cursor: pointer;       /* Indicates interactivity */
 }
+
 
 /* Hover effect for project cards (jump effect similar to skills cards) */
 .card:hover {
