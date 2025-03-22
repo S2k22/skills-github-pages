@@ -237,11 +237,12 @@ section {
   top: 50%;
   right: 50px;
   transform: translateY(-50%);
-  width: 350px;
-  opacity: 0.15;
+  width: 700px;      /* Twice the previous size */
+  opacity: 1;        /* Fully opaque */
   pointer-events: none;
   z-index: 9999;
 }
+
 
 
 
