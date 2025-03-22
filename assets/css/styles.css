@@ -85,17 +85,17 @@ section {
   z-index: 2; /* Ensure text appears above decorative image */
 }
 
-/* Decorative left-side image (pure decoration, not part of About content) */
-.background-left {
+/* Decorative image styled as a background element (does not affect layout) */
+.background-decorative {
   position: absolute;
-  left: 50px;           /* Adjust horizontal positioning as needed */
-  top: 60%;             /* Slightly below center */
+  left: 50px;             /* Adjust horizontal position as needed */
+  top: 30%;               /* Adjust vertical position as needed */
   transform: translateY(-50%);
-  width: 400px;         /* Adjust size as needed */
-  opacity: 1;
-  pointer-events: none; /* Not interactive */
-  z-index: 1;           /* Behind the text */
+  width: 700px;           /* Adjust size as needed */
+  pointer-events: none;   /* Non-interactive */
+  z-index: 9999;          /* On top of other elements */
 }
+
 
 /* 5. Skills Section as Cards */
 .skill-cards-container {
