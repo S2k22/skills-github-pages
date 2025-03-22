@@ -59,10 +59,10 @@ nav ul li {
   padding: 80px 20px; /* 20% less than 100px */
 }
 
-/* 4. Section Spacing (about 20% less) */
+/* 4. Section Styling (reduced spacing by ~20%) */
 section {
-  padding: 41px 0; /* from 51px to 41px */
-  margin: 1.36rem 0; /* from 1.7rem to 1.36rem */
+  padding: 41px 0; /* reduced from 51px to 41px */
+  margin: 1.36rem 0; /* reduced from 1.7rem to 1.36rem */
 }
 
 /* Increase text size in About Me */
@@ -99,6 +99,161 @@ section {
 }
 
 .skill-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-bubble {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Use only 5 bubble colors */
+.bubble1 {
+  background: rgba(180, 80, 80, 0.7);
+}
+.bubble2 {
+  background: rgba(180, 120, 80, 0.7);
+}
+.bubble3 {
+  background: rgba(80, 140, 100, 0.7);
+}
+.bubble4 {
+  background: rgba(80, 100, 180, 0.7);
+}
+.bubble5 {
+  background: rgba(160, 80, 120, 0.7);
+}
+
+/* 6. Experience Section */
+.experience-list {
+  margin-top: 2rem;
+}
+
+.experience-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.experience-item ul {
+  margin: 0.5rem 0 0 1.5rem;
+  padding: 0;
+}
+
+/* 7. Card Container & Project Cards - Force Uniform Height */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  grid-auto-rows: 400px; /* Force each row to be 400px tall */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%; /* Fill the 400px grid cell */
+  background: rgba(255, 255, 255, 0.1);
+  border: 3px solid rgba(255, 255, 255, 0.3); /* Uniform gray border */
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: #feb47b;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* 60% for the image, 40% for text */
+.card-image {
+  flex: 0 0 60%;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  flex: 0 0 40%;
+  padding: 1rem;
+  overflow: hidden; /* or auto if text is too long */
+}
+
+/* Ensure clickable cards */
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 8. Contact Section Adjustments */
+.contact-container {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.social-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-btn {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 0.25rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 6px #feb47b;
+}
+
+.social-btn img {
+  width: 48px;
+  height: 48px;
+}
+
+.contact-email a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-email a:hover {
+  transform: scale(1.05);
+  color: #feb47b;
+  box-shadow: 0 0 6px #feb47b;
+}
+
+/* 9. Apple Image Positioning (center-right, 2x bigger, fully opaque, on top layer) */
+.background-apple {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  width: 700px;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 9999;
+}
 
 
 
