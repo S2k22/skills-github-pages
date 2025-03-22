@@ -65,9 +65,9 @@ section {
   margin: 1.36rem 0;
 }
 
-/* About Section: Plain centered text (no card) */
+/* About Section: Use invisible card styling */
 #about {
-  position: relative;  /* For positioning .background-left */
+  position: relative;  /* For any absolute elements (if needed) */
   min-height: 600px;   /* Taller area */
   display: flex;
   align-items: center;
@@ -77,14 +77,17 @@ section {
   padding: 0;
 }
 
-#about .container {
+/* Replace the old .container rule in #about with this invisible card rule */
+#about .about-card {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
-  /* No background, border, or card styling */
-  z-index: 2; /* Ensure text appears above decorative image */
+  background: transparent; /* No background */
+  border: none;            /* No border */
+  box-shadow: none;        /* No shadow */
+  transition: none;        /* No animations or hover effects */
+  z-index: 2;              /* Ensures text appears above any decorative images */
 }
-
 
 
 /* 5. Skills Section as Cards */
