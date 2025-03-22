@@ -263,7 +263,7 @@ section {
 .background-decorative {
   position: absolute;
   left: 40px;             /* Adjust horizontal position as needed */
-  top: 150%;               /* Adjust vertical position as needed */
+  top: 100%;               /* Adjust vertical position as needed */
   transform: translateY(-50%);
   width: 800px;
   opacity: 1; /* Adjust size as needed */
