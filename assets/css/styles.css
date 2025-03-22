@@ -100,10 +100,25 @@ section {
 }
 
 .skill-bubble {
-  background: rgba(255, 255, 255, 0.2);
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
   font-size: 0.9rem;
+  /* Default fallback color if needed */
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Different colors for each bubble (applies within each skill-card) */
+.skill-bubble:nth-child(1) {
+  background: #ff7e5f;
+}
+.skill-bubble:nth-child(2) {
+  background: #feb47b;
+}
+.skill-bubble:nth-child(3) {
+  background: #33ff57;
+}
+.skill-bubble:nth-child(4) {
+  background: #3357ff;
 }
 
 /* 6. Experience Section */
@@ -130,7 +145,7 @@ section {
   display: flex;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.1);
-  border: 3px solid rgba(255, 255, 255, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.3); /* Gray uniform border */
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -141,23 +156,6 @@ section {
   transform: translateY(-5px);
   border-color: #feb47b;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-/* Unique initial border colors for each project card */
-.card.project1 {
-  border-color: #FF5733;
-}
-.card.project2 {
-  border-color: #33FF57;
-}
-.card.project3 {
-  border-color: #3357FF;
-}
-.card.project4 {
-  border-color: #FF33A1;
-}
-.card.project5 {
-  border-color: #F3FF33;
 }
 
 .card-image {
@@ -227,6 +225,7 @@ section {
   color: #feb47b;
   box-shadow: 0 0 8px #feb47b;
 }
+
 
 
 
