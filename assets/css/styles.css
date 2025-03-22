@@ -1,19 +1,18 @@
-/* 1. Smooth scrolling */
+/* 1. Global Styles & Montserrat font */
 html {
   scroll-behavior: smooth;
 }
 
-/* 2. Body with SVG dot pattern background (using a data URI) */
 body {
   background-color: #1c1c25;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIyIiBmaWxsPSIjMmUyZTNhIi8+PC9zdmc+");
   background-repeat: repeat;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
 }
 
-/* 3. Navigation */
+/* 2. Navigation */
 nav {
   position: fixed;
   top: 0;
@@ -35,27 +34,29 @@ nav ul li {
   margin: 0 1rem;
 }
 
-/* Animated nav buttons */
 .nav-btn {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
 }
 
 .nav-btn:hover {
   transform: scale(1.1);
   color: #feb47b;
+  box-shadow: 0 0 8px #feb47b;
 }
 
-/* 4. Container for sections */
+/* 3. Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 20px; /* extra top padding for fixed nav */
 }
 
-/* 5. Section styling */
+/* 4. Section Styling */
 section {
   padding: 60px 0;
   margin: 2rem 0;
@@ -63,7 +64,7 @@ section {
   border-radius: 8px;
 }
 
-/* 6. Experience Section Styles */
+/* 5. Experience Section */
 .experience-list {
   margin-top: 2rem;
 }
@@ -75,7 +76,7 @@ section {
   border-radius: 8px;
 }
 
-/* 7. Card container & cards */
+/* 6. Card Container & Cards */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -106,27 +107,30 @@ section {
   padding: 1rem;
 }
 
-/* 8. Social Buttons in Contact Section */
+/* 7. Contact Section Adjustments */
+.contact-container {
+  text-align: center;
+}
+
 .social-buttons {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.social-btn {
-  padding: 0.75rem 1.5rem;
-  background-color: #feb47b;
-  color: #1c1c25;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+/* Social button logos styling */
+.social-btn img {
+  width: 48px;  /* Increase logo size as needed */
+  height: 48px;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.social-btn:hover {
+.social-btn:hover img {
   transform: scale(1.1);
-  background-color: #ff7e5f;
+  filter: brightness(1.2);
 }
+
 
 
 
