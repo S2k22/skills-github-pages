@@ -68,7 +68,7 @@ section {
 
 /* Increase text size in About Me */
 #about p {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 /* 5. Skills Section as Cards */
@@ -162,7 +162,7 @@ section {
   }
 }
 
-/* Unified card styling with border, background, and on-load animation */
+/* Unified card styling */
 .card {
   display: flex;
   flex-direction: column;
@@ -170,12 +170,13 @@ section {
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
+  opacity: 0; /* Start hidden */
   animation: cardFadeIn 0.6s ease-out forwards;
   animation-delay: var(--animation-delay, 0s);
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect similar to skills cards */
+/* Hover effect for project cards (jump effect similar to skills cards) */
 .card:hover {
   transform: translateY(-3px);
   border-color: #feb47b;
@@ -199,7 +200,7 @@ section {
 .card-content {
   flex: 0 0 40%;
   padding: 1rem;
-  overflow: hidden; /* or auto, if you prefer scrollable text */
+  overflow: hidden;
 }
 
 /* Ensure clickable cards */
@@ -208,7 +209,6 @@ section {
   text-decoration: none;
   color: inherit;
 }
-
 
 /* 8. Contact Section Adjustments */
 .contact-container {
