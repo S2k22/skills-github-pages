@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Your Portfolio</title>
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <!-- AOS CSS for scroll animations -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
   <!-- Navigation -->
@@ -20,57 +17,37 @@
   </nav>
 
   <!-- About Section -->
-  <section id="about" data-aos="fade-up">
+  <section id="about">
     <div class="container">
       <h2>About Me</h2>
-      <img src="assets/images/your-photo.jpg" alt="Your Photo" class="profile-img">
-      <p>Hi, I'm [Your Name]. Welcome to my portfolio where I showcase my projects and skills.</p>
+      <p>Welcome to my portfolio!</p>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" data-aos="fade-up">
+  <section id="projects">
     <div class="container">
       <h2>Projects</h2>
       <div class="card-container">
-        <div class="card" data-aos="zoom-in">
-          <img src="assets/images/project1.jpg" alt="Project 1">
+        <div class="card">
+          <img src="assets/images/project1.jpg" alt="Project 1" />
           <div class="card-content">
             <h3>Project One</h3>
-            <p>Short description of project one goes here.</p>
+            <p>Description of project one.</p>
           </div>
         </div>
-        <div class="card" data-aos="zoom-in">
-          <img src="assets/images/project2.jpg" alt="Project 2">
-          <div class="card-content">
-            <h3>Project Two</h3>
-            <p>Short description of project two goes here.</p>
-          </div>
-        </div>
-        <!-- Add more cards as needed -->
+        <!-- Add more project cards as needed -->
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" data-aos="fade-up">
+  <section id="contact">
     <div class="container">
       <h2>Contact</h2>
-      <p>Feel free to reach out at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>Email me at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
     </div>
   </section>
-
-  <!-- AOS JavaScript for animations -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true
-    });
-  </script>
-  <!-- Custom JavaScript -->
-  <script src="assets/js/scripts.js"></script>
 </body>
 </html>
 
