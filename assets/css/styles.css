@@ -321,7 +321,7 @@ section {
 /* Medium devices (laptops around 16-inch monitors) */
 @media (min-width: 1024px) and (max-width: 1440px) {
   .background-decorative {
-    top: 50%;       /* Default vertical center */
+    top: 30%;       /* Default vertical center */
     left: 20px    /* Default horizontal offset */
     width: 30vw;    /* Or adjust as needed */
   }
