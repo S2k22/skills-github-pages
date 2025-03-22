@@ -1,4 +1,4 @@
 ---
-title: Welcome to my blog
+Mike Karpiuk: Welcome to my Data Science portfolio
 ---
 
