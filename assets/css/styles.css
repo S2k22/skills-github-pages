@@ -259,8 +259,8 @@ section {
 /* Decorative image styled as a background element (does not affect layout) */
 .background-decorative {
   position: absolute;
-  left: 50px;             /* Adjust horizontal position as needed */
-  top: 30%;               /* Adjust vertical position as needed */
+  left: 40px;             /* Adjust horizontal position as needed */
+  top: 70%;               /* Adjust vertical position as needed */
   transform: translateY(-50%);
   width: 700px;
   opacity: 1; /* Adjust size as needed */
