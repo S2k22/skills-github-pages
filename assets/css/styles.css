@@ -46,9 +46,9 @@ nav ul li {
 }
 
 .nav-btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   color: #feb47b;
-  box-shadow: 0 0 8px #feb47b;
+  box-shadow: 0 0 6px #feb47b;
 }
 
 /* 3. Container */
@@ -87,9 +87,9 @@ section {
 }
 
 .skill-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   border-color: #feb47b;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .skill-card h3 {
@@ -159,9 +159,9 @@ section {
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   border-color: #feb47b;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
 .card-image {
@@ -208,8 +208,8 @@ section {
 }
 
 .social-btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 8px #feb47b;
+  transform: scale(1.05);
+  box-shadow: 0 0 6px #feb47b;
 }
 
 .social-btn img {
@@ -227,10 +227,11 @@ section {
 }
 
 .contact-email a:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   color: #feb47b;
-  box-shadow: 0 0 8px #feb47b;
+  box-shadow: 0 0 6px #feb47b;
 }
+
 
 
 
