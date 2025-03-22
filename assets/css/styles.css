@@ -66,9 +66,47 @@ section {
   /* No section background overlays */
 }
 
-/* Increase text size in About Me */
+/* Increase text size in About Me (you can keep this or adjust as needed) */
 #about p {
   font-size: 1.8rem;
+}
+
+/* 
+   4a. Overriding the About section to be taller, centered, 
+   and allowing for a left-side image on top 
+*/
+#about {
+  position: relative;         /* Needed for absolutely positioned .background-left */
+  display: flex;              /* Allows centering of content */
+  align-items: center;        /* Vertically center the .about-box */
+  justify-content: center;    /* Horizontally center the .about-box */
+  min-height: 600px;          /* Increase for a taller area */
+  margin: 0;                  /* Override default section margin */
+  padding: 0;                 /* Override default section padding */
+}
+
+/* A "box" for your About content, centered with a semi-transparent background */
+.about-box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  text-align: center;
+  z-index: 2; /* Ensure it sits above the background image */
+}
+
+/* Left-side image on top, slightly below center */
+.background-left {
+  position: absolute;
+  left: 50px;                 /* Adjust horizontally as needed */
+  top: 60%;                   /* Slightly below the halfway mark (50%) */
+  transform: translateY(-50%);/* Centers the image vertically on that 'top' value */
+  width: 400px;               /* Adjust to control the image’s size */
+  opacity: 1;
+  pointer-events: none;       /* Make it non-interactive (unclickable) */
+  z-index: 9999;             /* On top of everything else */
 }
 
 /* 5. Skills Section as Cards */
@@ -150,13 +188,7 @@ section {
   margin-top: 2rem;
 }
 
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
+/* Project Cards with an enforced aspect ratio for images */
 .card {
   display: flex;
   flex-direction: column;
@@ -177,7 +209,7 @@ section {
 .card-image {
   /* This ensures a 1333:908 aspect ratio */
   aspect-ratio: 1333 / 908;
-  width: 100%;       /* The card container or grid will limit the overall width */
+  width: 100%;
   overflow: hidden;  /* Ensures any overflow is clipped */
 }
 
@@ -187,7 +219,6 @@ section {
   object-fit: cover;
   display: block;
 }
-
 
 .card-content {
   flex: 0 0 40%;
@@ -200,7 +231,6 @@ section {
   text-decoration: none;
   color: inherit;
 }
-
 
 /* 8. Contact Section Adjustments */
 .contact-container {
@@ -258,6 +288,7 @@ section {
   pointer-events: none;
   z-index: 9999;
 }
+
 
 
 
