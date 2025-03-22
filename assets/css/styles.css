@@ -3,24 +3,24 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 2. Body with dotted background */
+/* 2. Body with an SVG dot pattern via data URI */
 body {
-  /* Solid base color */
+  /* Base background color */
   background-color: #1c1c25;
 
   /*
-    Create a dotted pattern using radial-gradient:
-    - Dot color: #2e2e3a (slightly lighter than #1c1c25 for subtle contrast)
-    - Dot radius: 1.5px or 2px for "50% bigger" than a 1px dot
+    Repeating 20x20 SVG:
+    - A circle of radius 2px at the center (cx="10", cy="10").
+    - Dot color: #2e2e3a (slightly lighter than #1c1c25).
+    - Encoded as Base64 data:image/svg+xml.
   */
-  background-image: radial-gradient(#2e2e3a 2px, transparent 2px);
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIyIiBmaWxsPSIjMmUyZTNhIi8+PC9zdmc+");
+  background-repeat: repeat;
 
-  /* Space the dots 20px apart horizontally and vertically */
-  background-size: 20px 20px;
-
+  /* Remove default margins, set up text style */
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  color: #fff; /* White text for good contrast */
+  color: #fff;
 }
 
 /* 3. Navigation bar */
@@ -28,7 +28,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8); /* Dark overlay for the nav */
+  background: rgba(0, 0, 0, 0.8);
   box-shadow: 0 2px 4px rgba(0,0,0,0.5);
   z-index: 1000;
 }
@@ -62,7 +62,7 @@ nav ul li a {
 section {
   padding: 60px 0;
   margin: 2rem 0;
-  background-color: rgba(255, 255, 255, 0.06); /* Slight translucent overlay */
+  background-color: rgba(255, 255, 255, 0.06); /* Light overlay */
   border-radius: 8px;
 }
 
@@ -75,8 +75,8 @@ section {
 }
 
 .card {
-  background: #fff; /* White card background for contrast */
-  color: #333;      /* Dark text inside cards */
+  background: #fff;  /* White card background for contrast */
+  color: #333;       /* Dark text inside cards */
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -96,6 +96,7 @@ section {
 .card-content {
   padding: 1rem;
 }
+
 
 
 
