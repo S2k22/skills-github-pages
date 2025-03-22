@@ -85,16 +85,6 @@ section {
   z-index: 2; /* Ensure text appears above decorative image */
 }
 
-/* Decorative image styled as a background element (does not affect layout) */
-.background-decorative {
-  position: absolute;
-  left: 50px;             /* Adjust horizontal position as needed */
-  top: 30%;               /* Adjust vertical position as needed */
-  transform: translateY(-50%);
-  width: 700px;           /* Adjust size as needed */
-  pointer-events: none;   /* Non-interactive */
-  z-index: 9999;          /* On top of other elements */
-}
 
 
 /* 5. Skills Section as Cards */
@@ -264,6 +254,18 @@ section {
   opacity: 1;
   pointer-events: none;
   z-index: 9999;
+}
+
+/* Decorative image styled as a background element (does not affect layout) */
+.background-decorative {
+  position: absolute;
+  left: 50px;             /* Adjust horizontal position as needed */
+  top: 30%;               /* Adjust vertical position as needed */
+  transform: translateY(-50%);
+  width: 700px;
+  opacity: 1; /* Adjust size as needed */
+  pointer-events: none;   /* Non-interactive */
+  z-index: 9999;          /* On top of other elements */
 }
 
 
