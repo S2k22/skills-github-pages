@@ -40,7 +40,8 @@ nav ul li {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
-  padding: 0.5rem 1rem;
+  padding: 0.65rem 1.3rem; /* Increased padding by ~30% */
+  font-size: 1.3rem;       /* Increased font size by ~30% */
   border-radius: 4px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -55,13 +56,13 @@ nav ul li {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 20px; /* extra top padding for fixed nav */
+  padding: 80px 20px; /* Reduced top padding by 20% (from 100px to 80px) */
 }
 
-/* 4. Section Styling (reduced spacing by ~15%) */
+/* 4. Section Styling (reduced spacing by ~20%) */
 section {
-  padding: 51px 0;
-  margin: 1.7rem 0;
+  padding: 41px 0; /* reduced from 51px to 41px */
+  margin: 1.36rem 0; /* reduced from 1.7rem to 1.36rem */
   /* No section background overlays */
 }
 
@@ -112,7 +113,7 @@ section {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* Muted bubble colors with transparency */
+/* Use only 5 bubble colors */
 .bubble1 {
   background: rgba(180, 80, 80, 0.7);
 }
@@ -124,6 +125,9 @@ section {
 }
 .bubble4 {
   background: rgba(80, 100, 180, 0.7);
+}
+.bubble5 {
+  background: rgba(160, 80, 120, 0.7);
 }
 
 /* 6. Experience Section */
@@ -231,14 +235,14 @@ section {
   box-shadow: 0 0 6px #feb47b;
 }
 
-/* 9. Apple Image Positioning (center-right, larger, on top layer) */
+/* 9. Apple Image Positioning (center-right, 2x bigger, fully opaque, on top layer) */
 .background-apple {
   position: absolute;
   top: 50%;
   right: 50px;
   transform: translateY(-50%);
-  width: 700px;      /* Twice the previous size */
-  opacity: 1;        /* Fully opaque */
+  width: 700px;
+  opacity: 1;
   pointer-events: none;
   z-index: 9999;
 }
