@@ -141,14 +141,15 @@ section {
 
 /* 6. Experience Section */
 .experience-list {
-  margin-top: 2rem;
+  margin-top: 3rem;  /* Increased margin for more vertical space */
 }
 
 .experience-item {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
+  margin-bottom: 2rem;   /* Increased bottom margin */
+  padding: 1.5rem;       /* Increased padding for a larger box */
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
+  font-size: 1.6rem;     /* Increased font size for better readability */
 }
 
 /* 7. Card Container & Project Cards */
