@@ -3,27 +3,17 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 2. Body with an SVG dot pattern via data URI */
+/* 2. Body with SVG dot pattern background (using a data URI) */
 body {
-  /* Base background color */
   background-color: #1c1c25;
-
-  /*
-    Repeating 20x20 SVG:
-    - A circle of radius 2px at the center (cx="10", cy="10").
-    - Dot color: #2e2e3a (slightly lighter than #1c1c25).
-    - Encoded as Base64 data:image/svg+xml.
-  */
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIyIiBmaWxsPSIjMmUyZTNhIi8+PC9zdmc+");
   background-repeat: repeat;
-
-  /* Remove default margins, set up text style */
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
 }
 
-/* 3. Navigation bar */
+/* 3. Navigation */
 nav {
   position: fixed;
   top: 0;
@@ -45,28 +35,47 @@ nav ul li {
   margin: 0 1rem;
 }
 
-nav ul li a {
+/* Animated nav buttons */
+.nav-btn {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-btn:hover {
+  transform: scale(1.1);
+  color: #feb47b;
 }
 
 /* 4. Container for sections */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 20px; /* Extra top padding for the fixed nav */
+  padding: 100px 20px; /* extra top padding for fixed nav */
 }
 
 /* 5. Section styling */
 section {
   padding: 60px 0;
   margin: 2rem 0;
-  background-color: rgba(255, 255, 255, 0.06); /* Light overlay */
+  background-color: rgba(255, 255, 255, 0.06);
   border-radius: 8px;
 }
 
-/* 6. Card container & cards */
+/* 6. Experience Section Styles */
+.experience-list {
+  margin-top: 2rem;
+}
+
+.experience-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+/* 7. Card container & cards */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -75,8 +84,8 @@ section {
 }
 
 .card {
-  background: #fff;  /* White card background for contrast */
-  color: #333;       /* Dark text inside cards */
+  background: #fff;
+  color: #333;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -96,6 +105,29 @@ section {
 .card-content {
   padding: 1rem;
 }
+
+/* 8. Social Buttons in Contact Section */
+.social-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #feb47b;
+  color: #1c1c25;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-btn:hover {
+  transform: scale(1.1);
+  background-color: #ff7e5f;
+}
+
 
 
 
