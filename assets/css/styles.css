@@ -67,25 +67,26 @@ section {
 
 /* About Section: Use invisible card styling */
 #about {
-  position: relative;         /* Needed for absolutely positioned .background-left */
+  position: relative;         /* Needed for absolutely positioned elements */
   display: flex;              /* Allows centering of content */
   align-items: center;        /* Vertically center the .about-box */
   justify-content: center;    /* Horizontally center the .about-box */
-  min-height: 600px;          /* Increase for a taller area */
-  margin: 0;                  /* Override default section margin */
-  padding: 0;                 /* Override default section padding */
+  min-height: 800px;          /* Increased vertical height */
+  margin: 0;
+  padding: 0;
 }
 
-/* A "box" for your About content, centered with a semi-transparent background */
+/* A "box" for your About content with no visible border and larger text */
 .about-box {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05); /* Semi-transparent background */
+  border: none;            /* Invisible border */
   border-radius: 8px;
   text-align: center;
-  z-index: 2; /* Ensure it sits above the background image */
+  z-index: 2;              /* Ensure text appears above decorative images */
+  font-size: 2rem;         /* Increased font size */
 }
 
 
