@@ -282,8 +282,8 @@ section {
 @media (min-width: 1024px) and (max-width: 1440px) {
   .background-apple {
     top: 50%;       /* Default vertical center */
-    right: 50px;    /* Default horizontal offset */
-    width: 30vw;    /* Or adjust as needed */
+    right: 60px;    /* Default horizontal offset */
+    width: 25vw;    /* Or adjust as needed */
   }
 }
 
