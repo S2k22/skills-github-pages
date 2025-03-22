@@ -249,17 +249,45 @@ section {
 }
 
 /* 9. Apple Image Positioning (center-right, 2x bigger, fully opaque, on top layer) */
+/* Default styling (for devices larger than medium, or as a base) */
 .background-apple {
   position: absolute;
   top: 50%;
   right: 50px;
   transform: translateY(-50%);
-  width: 30vw;
-  max-width: 700px;
-  opacity: 1;
+  width: 30vw;       /* Responsive width based on viewport */
+  max-width: 700px;  /* Prevents it from becoming too large */
   pointer-events: none;
   z-index: 9999;
 }
+
+/* Small devices (phones) */
+@media (max-width: 767px) {
+  .background-apple {
+    top: 65%;       /* Adjust vertical position */
+    right: 20px;    /* Adjust horizontal offset */
+    width: 50vw;    /* Use a larger portion of the viewport */
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .background-apple {
+    top: 60%;       /* Slightly adjust vertical position */
+    right: 30px;    /* Adjust horizontal offset */
+    width: 40vw;    /* Adjust width as needed */
+  }
+}
+
+/* Medium devices (laptops around 16-inch monitors) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .background-apple {
+    top: 50%;       /* Default vertical center */
+    right: 50px;    /* Default horizontal offset */
+    width: 30vw;    /* Or adjust as needed */
+  }
+}
+
 
 /* Decorative image styled as a background element (does not affect layout) */
 .background-decorative {
@@ -274,6 +302,32 @@ section {
   z-index: 9999;          /* On top of other elements */
 }
 
+/* Small devices (phones) */
+@media (max-width: 767px) {
+  .background-decorative {
+    top: 65%;       /* Adjust vertical position */
+    right: 20px;    /* Adjust horizontal offset */
+    width: 50vw;    /* Use a larger portion of the viewport */
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .background-decorative {
+    top: 60%;       /* Slightly adjust vertical position */
+    right: 30px;    /* Adjust horizontal offset */
+    width: 40vw;    /* Adjust width as needed */
+  }
+}
+
+/* Medium devices (laptops around 16-inch monitors) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .background-decorative {
+    top: 50%;       /* Default vertical center */
+    right: 50px;    /* Default horizontal offset */
+    width: 30vw;    /* Or adjust as needed */
+  }
+}
 
 
 
