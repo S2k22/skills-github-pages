@@ -10,9 +10,10 @@
   <!-- Navigation -->
   <nav>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about" class="nav-btn">About</a></li>
+      <li><a href="#experience" class="nav-btn">Experience</a></li>
+      <li><a href="#projects" class="nav-btn">Projects</a></li>
+      <li><a href="#contact" class="nav-btn">Contact</a></li>
     </ul>
   </nav>
 
@@ -24,30 +25,48 @@
     </div>
   </section>
 
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-list">
+        <div class="experience-item" data-aos="fade-up">
+          <h3>Job Title 1</h3>
+          <p>Company Name, Duration</p>
+          <p>Brief description of responsibilities and achievements.</p>
+        </div>
+        <div class="experience-item" data-aos="fade-up">
+          <h3>Job Title 2</h3>
+          <p>Company Name, Duration</p>
+          <p>Brief description of responsibilities and achievements.</p>
+        </div>
+        <!-- Add more experience items as needed -->
+      </div>
+    </div>
+  </section>
+
   <!-- Projects Section -->
   <section id="projects">
     <div class="container">
       <h2>Projects</h2>
       <div class="card-container">
-        <!-- Example project card #1 -->
-        <div class="card">
+        <!-- Example Project Card #1 -->
+        <div class="card" data-aos="zoom-in">
           <img src="assets/images/project1.jpg" alt="Project 1" />
           <div class="card-content">
             <h3>Project One</h3>
             <p>Description of project one.</p>
           </div>
         </div>
-
-        <!-- Example project card #2 -->
-        <div class="card">
+        <!-- Example Project Card #2 -->
+        <div class="card" data-aos="zoom-in">
           <img src="assets/images/project2.jpg" alt="Project 2" />
           <div class="card-content">
             <h3>Project Two</h3>
             <p>Description of project two.</p>
           </div>
         </div>
-
-        <!-- Add more cards as needed -->
+        <!-- Add more project cards as needed -->
       </div>
     </div>
   </section>
@@ -57,8 +76,26 @@
     <div class="container">
       <h2>Contact</h2>
       <p>Email me at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <div class="social-buttons">
+        <a href="https://www.linkedin.com/in/yourprofile" class="social-btn" target="_blank">LinkedIn</a>
+        <a href="https://github.com/yourusername" class="social-btn" target="_blank">GitHub</a>
+      </div>
     </div>
   </section>
+  
+  <!-- Optional: Include AOS Library for scroll animations -->
+  <!-- Uncomment below if you want to enable AOS animations -->
+  <!--
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+  -->
 </body>
 </html>
 
