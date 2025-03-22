@@ -5,8 +5,10 @@ html {
 
 body {
   background-color: #1c1c25;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIyIiBmaWxsPSIjMmUyZTNhIi8+PC9zdmc+");
+  /* Updated pattern: reduced spacing to 15px */
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNSAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI3LjUiIGN5PSI3LjUiIHI9IjIiIGZpbGw9IiMyZTJlM2EiLz48L3N2Zz4=");
   background-repeat: repeat;
+  background-size: 15px 15px;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
@@ -57,11 +59,10 @@ nav ul li {
 }
 
 /* 4. Section Styling */
-/* Remove section background overlay to avoid horizontal dividing lines */
 section {
   padding: 60px 0;
   margin: 2rem 0;
-  /* Removed background-color */
+  /* Removed section background overlay to eliminate horizontal dividing lines */
 }
 
 /* 5. Experience Section */
@@ -85,8 +86,8 @@ section {
 }
 
 .card {
-  background: transparent; /* Transparent background */
-  border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent gray background */
+  border: 3px solid rgba(255, 255, 255, 0.3); /* Thicker border */
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -153,6 +154,7 @@ section {
   color: #feb47b;
   box-shadow: 0 0 8px #feb47b;
 }
+
 
 
 
