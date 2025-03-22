@@ -76,7 +76,7 @@ section {
   border-radius: 8px;
 }
 
-/* 6. Card Container & Cards */
+/* 6. Card Container & Transparent Portfolio Cards */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -85,16 +85,16 @@ section {
 }
 
 .card {
-  background: #fff;
-  color: #333;
+  background: transparent; /* Transparent background */
+  border: 2px solid rgba(255, 255, 255, 0.2); /* subtle border */
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
+  border-color: #feb47b; /* Highlight border color on hover */
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
@@ -125,7 +125,7 @@ section {
   display: inline-block;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 4px;
-  padding: 0.25rem; /* small padding for the highlight border */
+  padding: 0.25rem;
 }
 
 .social-btn:hover {
@@ -153,6 +153,7 @@ section {
   color: #feb47b;
   box-shadow: 0 0 8px #feb47b;
 }
+
 
 
 
