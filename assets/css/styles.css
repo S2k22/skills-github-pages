@@ -58,11 +58,16 @@ nav ul li {
   padding: 100px 20px; /* extra top padding for fixed nav */
 }
 
-/* 4. Section Styling */
+/* 4. Section Styling (reduced spacing by ~15%) */
 section {
-  padding: 60px 0;
-  margin: 2rem 0;
+  padding: 51px 0;
+  margin: 1.7rem 0;
   /* No section background overlays */
+}
+
+/* Increase text size in About Me */
+#about p {
+  font-size: 1.2rem;
 }
 
 /* 5. Skills Section as Cards */
@@ -103,11 +108,12 @@ section {
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
   font-size: 0.9rem;
-  color: #fff;  /* white text for contrast */
-  background: rgba(200, 200, 200, 0.1);  /* fallback */
+  color: #fff;
+  /* Default fallback */
+  background: rgba(255, 255, 255, 0.2);
 }
 
-/* Updated muted, transparent colors for bubbles */
+/* Explicit bubble colors with transparency */
 .bubble1 {
   background: rgba(180, 80, 80, 0.7);    /* Muted red */
 }
@@ -120,7 +126,6 @@ section {
 .bubble4 {
   background: rgba(80, 100, 180, 0.7);    /* Muted blue */
 }
-
 
 /* 6. Experience Section */
 .experience-list {
@@ -146,7 +151,7 @@ section {
   display: flex;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.1);
-  border: 3px solid rgba(255, 255, 255, 0.3); /* Gray uniform border */
+  border: 3px solid rgba(255, 255, 255, 0.3); /* Uniform gray border */
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -226,6 +231,7 @@ section {
   color: #feb47b;
   box-shadow: 0 0 8px #feb47b;
 }
+
 
 
 
