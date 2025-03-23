@@ -358,7 +358,7 @@ section {
 /* Bubble around the About Me content with a black background */
 .about-bubble {
   background: #000;  /* Solid black background */
-  border: 3px solid rgba(254, 180, 123, 1); /* Border color similar to your cards */
+  border: 3px solid rgba(192, 192, 192, 1); /* Border color similar to your cards */
   border-radius: 9999px;  /* Fully rounded bubble */
   padding: 2rem;  /* Adjust as needed to comfortably wrap your content */
   margin: 0 auto;
