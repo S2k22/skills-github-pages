@@ -137,26 +137,22 @@ section {
 /* 6. Experience Section */
 /* Single "Card" Container for Experience Section */
 #experience {
-  background: rgba(0, 0, 0, 0.8); /* Dark background */
-  border: 3px solid #feb47b;      /* Golden border */
-  border-radius: 16px;            /* Rounded corners */
-  padding: 80px 20px;             /* Consistent spacing */
-  max-width: 1200px;              /* Constrain width */
-  margin: 0 auto;                 /* Center horizontally */
+  background: rgba(0, 0, 0, 0.8);  /* Dark background */
+  border: 3px solid #feb47b;       /* Golden border for the card */
+  border-radius: 16px;             /* Rounded corners */
+  padding: 80px 20px;              /* Consistent spacing */
+  max-width: 1200px;               /* Constrain width */
+  margin: 0 auto;                  /* Center horizontally */
   position: relative;
 }
 
-/* Title with "Lighting Up" Effect on Hover */
+/* Static Experience Title (No Animation) */
 #experience h2 {
   text-align: center;
   font-size: 2rem;
-  color: #feb47b;               /* Base gold color */
+  color: #fff;                    /* White color */
   margin-bottom: 2rem;
-  transition: text-shadow 0.3s ease;
-}
-
-#experience h2:hover {
-  text-shadow: 0 0 10px #feb47b, 0 0 20px #feb47b, 0 0 30px #feb47b;
+  /* No transition or hover effect */
 }
 
 /* Experience Content Styles */
@@ -164,20 +160,31 @@ section {
   color: #fff;
 }
 
+/* Job Title ("Software Designer") with Animation on Hover */
 .experience-content h3 {
   margin-top: 0;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
+  color: #fff;  /* Base color for the job title */
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.experience-content h3:hover {
+  transform: scale(1.05);
+  color: #feb47b;               /* Changes to golden on hover */
+  box-shadow: 0 0 6px #feb47b;
+}
+
+/* Company Name - No Golden Accent */
 .experience-content h4 {
   margin: 0;
   font-size: 1.2rem;
   font-weight: normal;
-  color: #feb47b; /* Golden accent for company name */
+  color: #fff;                  /* Plain white color */
   margin-bottom: 1rem;
 }
 
+/* Bulleted List Styles */
 .experience-content ul {
   list-style: disc inside;
   margin: 0;
@@ -188,6 +195,7 @@ section {
   margin-bottom: 0.5rem;
   line-height: 1.5;
 }
+
 
 
 /* 7. Card Container & Project Cards */
