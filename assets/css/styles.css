@@ -161,6 +161,12 @@ section {
   position: relative;
 }
 
+.experience:hover {
+  transform: translateY(-3px);
+  border-color: #feb47b;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
 /* Static Section Title */
 #experience h2 {
   text-align: center;
