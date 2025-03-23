@@ -151,17 +151,24 @@ section {
 }
 
 /* Experience Section Container */
+********** EXPERIENCE CARD **********/
 #experience {
   background: rgba(0, 0, 0, 0.8);
-  border: 3px solid rgba(192, 192, 192, 1);
+  border: 3px solid #feb47b;
   border-radius: 16px;
   padding: 80px 20px;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+#experience:hover {
+  transform: translateY(-3px);
+  background: rgba(0, 0, 0, 0.6);  /* Slightly lighter background */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Static Section Title */
+/********** SECTION TITLES & CONTENT **********/
 #experience h2 {
   text-align: center;
   font-size: 2rem;
@@ -169,35 +176,30 @@ section {
   margin-bottom: 2rem;
 }
 
-/* Experience Content Styling */
 .experience-content {
   color: #fff;
 }
 
-/* Job Title ("Software Designer") with Glowing Text Effect */
 .experience-content h3 {
   margin-top: 0;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
   color: #fff;
-  text-shadow: 0 0 8px #feb47b;  /* Subtle glow */
+  text-shadow: 0 0 6px #feb47b;  /* Base subtle glow */
   transition: text-shadow 0.3s ease;
 }
-
 .experience-content h3:hover {
-  text-shadow: 0 0 15px #feb47b; /* Intensified glow on hover */
+  text-shadow: 0 0 12px #feb47b;  /* Intensified glow on hover */
 }
 
-/* Company Name Styling (wrapped in bubble) */
 .experience-content h4 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: normal;
   color: #fff;
   margin-bottom: 1rem;
 }
 
-/* Bulleted List Styles */
 .experience-content ul {
   list-style: disc inside;
   margin: 0;
