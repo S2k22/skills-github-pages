@@ -99,7 +99,7 @@ section {
 }
 
 .skill-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 1);
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   padding: 1rem;
@@ -147,7 +147,7 @@ section {
 .experience-item {
   margin-bottom: 2rem;   /* Increased bottom margin */
   padding: 1.5rem;       /* Increased padding for a larger box */
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 1);
   border-radius: 8px;
   font-size: 1.6rem;     /* Increased font size for better readability */
 }
@@ -163,7 +163,7 @@ section {
 .card {
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 1);
   border: 3px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   overflow: hidden;
