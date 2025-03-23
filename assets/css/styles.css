@@ -135,18 +135,92 @@ section {
 .bubble5 { background: rgba(160, 80, 120, 0.7); }
 
 /* 6. Experience Section */
-.experience-list {
-  margin-top: 3rem;  /* Increased margin for more vertical space */
+#experience {
+  background: rgba(0, 0, 0, 0.8); /* Dark background for contrast */
+  border: 3px solid rgba(192, 192, 192, 1);      /* Golden border */
+  border-radius: 16px;            /* Rounded corners */
+  padding: 80px 20px;             /* Same padding as before */
+  max-width: 1200px;              /* Keep the same max width you used previously */
+  margin: 0 auto;                 /* Center horizontally */
+  position: relative;             /* Needed for the shine effect positioning */
 }
 
-.experience-item {
-  margin-bottom: 2rem;   /* Increased bottom margin */
-  padding: 1.5rem;       /* Increased padding for a larger box */
-  background: rgba(0,0,0, 1);
-  border: 3px solid rgba(254, 180, 123, 1)
-  border-radius: 8px;
-  font-size: 1.6rem;     /* Increased font size for better readability */
+
+#experience h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #feb47b;       /* Base gold color */
+  margin-bottom: 2rem;
+  position: relative;   /* Allows the pseudo-element for shine */
+  overflow: hidden;     /* Hides the moving gradient */
 }
+
+
+#experience h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(254, 180, 123, 0.6) 50%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+
+#experience h2:hover::before {
+  animation: shine 1s ease forwards;
+}
+
+@keyframes shine {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 200%;
+  }
+}
+
+.experience-content {
+  color: #fff;
+}
+
+/* Sub-Title (Job Title) */
+.experience-content h3 {
+  margin-top: 0;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #fff; /* White or any contrasting color */
+}
+
+/* Company Name */
+.experience-content h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #feb47b; /* Golden accent for the company name */
+  margin-bottom: 1rem;
+}
+
+/* Bulleted List */
+.experience-content ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+.experience-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
 
 /* 7. Card Container & Project Cards */
 .card-container {
