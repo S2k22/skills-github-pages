@@ -135,14 +135,14 @@ section {
 .bubble5 { background: rgba(160, 80, 120, 0.7); }
 
 /* 6. Experience Section */
-/* Container for Experience Section remains as a single card */
+/* Single "Card" Container for Experience Section */
 #experience {
-  background: rgba(0, 0, 0, 0.8);
-  border: 3px solid #feb47b;
-  border-radius: 16px;
-  padding: 80px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.8);  /* Dark background */
+  border: 3px solid #feb47b;       /* Golden border */
+  border-radius: 16px;             /* Rounded corners */
+  padding: 80px 20px;              /* Consistent spacing */
+  max-width: 1200px;               /* Constrain width */
+  margin: 0 auto;                  /* Center horizontally */
   position: relative;
 }
 
@@ -159,24 +159,19 @@ section {
   color: #fff;
 }
 
-/* Job Title ("Software Designer") with a Subtle Glowing Text Effect */
+/* Job Title ("Software Designer") with a Consistent Glow Effect */
 .experience-content h3 {
   margin-top: 0;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
   color: #fff;
-  /* Apply continuous text glow animation */
-  animation: glowText 2s infinite;
+  text-shadow: 0 0 8px #feb47b;  /* Subtle, consistent glow */
+  transition: text-shadow 0.3s ease;  /* Animate only the text-shadow property */
 }
 
-/* Keyframes for a subtle text glow */
-@keyframes glowText {
-  0%, 100% {
-    text-shadow: 0 0 5px #feb47b;
-  }
-  50% {
-    text-shadow: 0 0 10px #feb47b;
-  }
+/* On hover, intensify the glow effect without changing size */
+.experience-content h3:hover {
+  text-shadow: 0 0 15px #feb47b;
 }
 
 /* Company Name - Plain styling */
@@ -199,6 +194,7 @@ section {
   margin-bottom: 0.5rem;
   line-height: 1.5;
 }
+
 
 /* 7. Card Container & Project Cards */
 .card-container {
