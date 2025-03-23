@@ -67,13 +67,8 @@ section {
 
 /* About Section: Use invisible card styling */
 #about {
-  position: relative;         /* Needed for absolutely positioned elements */
-  display: flex;              /* Allows centering of content */
-  align-items: center;        /* Vertically center the .about-box */
-  justify-content: center;    /* Horizontally center the .about-box */
-  min-height: 800px;          /* Increased vertical height */
-  margin: 0;
-  padding: 0;
+  padding: 80px 20px;  /* Ensures some vertical spacing around the section */
+  text-align: center;  /* Centers the content within the section */
 }
 
 /* A "box" for your About content with no visible border and larger text */
@@ -100,7 +95,7 @@ section {
 
 .skill-card {
   background: rgba(0, 0, 0, 0.8 );
-  border: 2px solid rgba(254, 180, 123, 1);
+  border: 2px solid rgba(192, 192, 192, 1);
   border-radius: 8px;
   padding: 1rem;
   transition: transform 0.3s ease, border-color 0.3s ease;
@@ -165,7 +160,7 @@ section {
   display: flex;
   flex-direction: column;
   background: rgba(0,0,0, 1);
-  border: 3px solid rgba(254, 180, 123, 1);
+  border: 3px solid rgba(192, 192, 192, 1);
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease, border-color 0.3s ease;
@@ -364,6 +359,9 @@ section {
   margin: 0 auto;
   max-width: 800px;  /* Limit the width for better readability */
   text-align: center;
+  /* Increase text size */
+  font-size: 1.65rem;     /* Adjust up/down as needed */
+  line-height: 1.4; 
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
