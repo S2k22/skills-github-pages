@@ -253,8 +253,8 @@ section {
 /* Default styling (for devices larger than medium, or as a base) */
 .background-apple {
   position: absolute;
-  top: 50%;
-  right: 60px;
+  top: 35%;
+  right: 30px;
   transform: translateY(-50%);
   width: 30vw;       /* Responsive width based on viewport */
   max-width: 700px;  /* Prevents it from becoming too large */
@@ -282,8 +282,8 @@ section {
 /* Medium devices (laptops around 16-inch monitors) */
 @media (min-width: 1024px) and (max-width: 1440px) {
   .background-apple {
-    top: 35%;       /* Default vertical center */
-    right: 70px;    /* Default horizontal offset */
+    top: 15%;       /* Default vertical center */
+    right: 30px;    /* Default horizontal offset */
     width: 25vw;    /* Or adjust as needed */
   }
 }
