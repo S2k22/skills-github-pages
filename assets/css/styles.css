@@ -138,7 +138,7 @@ section {
 /* Single "Card" Container for Experience Section */
 #experience {
   background: rgba(0, 0, 0, 0.8);  /* Dark background */
-  border: 3px solid #feb47b;       /* Golden border for the card */
+  border: 3px solid #feb47b;       /* Golden border */
   border-radius: 16px;             /* Rounded corners */
   padding: 80px 20px;              /* Consistent spacing */
   max-width: 1200px;               /* Constrain width */
@@ -146,41 +146,48 @@ section {
   position: relative;
 }
 
-/* Static Experience Title (No Animation) */
+/* Static Experience Title */
 #experience h2 {
   text-align: center;
   font-size: 2rem;
   color: #fff;                    /* White color */
   margin-bottom: 2rem;
-  /* No transition or hover effect */
+  /* No animation or hover effect */
 }
 
-/* Experience Content Styles */
+/* Experience Content */
 .experience-content {
   color: #fff;
 }
 
-/* Job Title ("Software Designer") with Animation on Hover */
+/* Job Title ("Software Designer") with Continuous Glowing Border Animation */
 .experience-content h3 {
   margin-top: 0;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
-  color: #fff;  /* Base color for the job title */
-  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;                     /* Base color for the job title */
+  padding: 0.5rem;                 /* Space inside the border */
+  border: 2px solid #feb47b;       /* Golden border */
+  border-radius: 4px;              /* Slight rounding for the border */
+  animation: glowBorder 1.5s ease-in-out infinite alternate;
 }
 
-.experience-content h3:hover {
-  transform: scale(1.05);
-  color: #feb47b;               /* Changes to golden on hover */
-  box-shadow: 0 0 6px #feb47b;
+/* Keyframes for continuous glowing border effect */
+@keyframes glowBorder {
+  from {
+    box-shadow: 0 0 5px #feb47b;
+  }
+  to {
+    box-shadow: 0 0 20px #feb47b;
+  }
 }
 
-/* Company Name - No Golden Accent */
+/* Company Name - Plain styling */
 .experience-content h4 {
   margin: 0;
   font-size: 1.2rem;
   font-weight: normal;
-  color: #fff;                  /* Plain white color */
+  color: #fff;                   /* Plain white color */
   margin-bottom: 1rem;
 }
 
@@ -195,6 +202,7 @@ section {
   margin-bottom: 0.5rem;
   line-height: 1.5;
 }
+
 
 
 
