@@ -135,14 +135,35 @@ section {
 .bubble5 { background: rgba(160, 80, 120, 0.7); }
 
 /* 6. Experience Section */
-/* Single "Card" Container for Experience Section */
+/* Existing suppressed bubble colors */
+.bubble1 { background: rgba(180, 80, 80, 0.7); }
+.bubble2 { background: rgba(180, 120, 80, 0.7); }
+.bubble3 { background: rgba(80, 140, 100, 0.7); }
+.bubble4 { background: rgba(80, 100, 180, 0.7); }
+.bubble5 { background: rgba(160, 80, 120, 0.7); }
+.bubble6 { background: rgba(100, 150, 200, 0.7); }
+
+/* Purple bubble for "Norigin Media" */
+.bubble.purple { background: rgba(128, 0, 128, 0.7); }
+
+/* Common bubble styling */
+.bubble {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+/* Experience Section Container */
 #experience {
-  background: rgba(0, 0, 0, 0.8);  /* Dark background */
-  border: 3px solid #feb47b;       /* Golden border */
-  border-radius: 16px;             /* Rounded corners */
-  padding: 80px 20px;              /* Consistent spacing */
-  max-width: 1200px;               /* Constrain width */
-  margin: 0 auto;                  /* Center horizontally */
+  background: rgba(0, 0, 0, 0.8);
+  border: 3px solid #feb47b;
+  border-radius: 16px;
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -159,22 +180,21 @@ section {
   color: #fff;
 }
 
-/* Job Title ("Software Designer") with a Consistent Glow Effect */
+/* Job Title ("Software Designer") with Glowing Text Effect */
 .experience-content h3 {
   margin-top: 0;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
   color: #fff;
-  text-shadow: 0 0 8px #feb47b;  /* Subtle, consistent glow */
-  transition: text-shadow 0.3s ease;  /* Animate only the text-shadow property */
+  text-shadow: 0 0 8px #feb47b;  /* Subtle glow */
+  transition: text-shadow 0.3s ease;
 }
 
-/* On hover, intensify the glow effect without changing size */
 .experience-content h3:hover {
-  text-shadow: 0 0 15px #feb47b;
+  text-shadow: 0 0 15px #feb47b; /* Intensified glow on hover */
 }
 
-/* Company Name - Plain styling */
+/* Company Name Styling (wrapped in bubble) */
 .experience-content h4 {
   margin: 0;
   font-size: 1.2rem;
@@ -193,8 +213,8 @@ section {
 .experience-content li {
   margin-bottom: 0.5rem;
   line-height: 1.5;
+  color: #fff;
 }
-
 
 /* 7. Card Container & Project Cards */
 .card-container {
