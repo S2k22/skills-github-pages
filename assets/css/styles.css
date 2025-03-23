@@ -135,50 +135,47 @@ section {
 .bubble5 { background: rgba(160, 80, 120, 0.7); }
 
 /* 6. Experience Section */
-/* Single "Card" Container for Experience Section */
+/* Container for Experience Section remains as a single card */
 #experience {
-  background: rgba(0, 0, 0, 0.8);  /* Dark background */
-  border: 3px solid #feb47b;       /* Golden border */
-  border-radius: 16px;             /* Rounded corners */
-  padding: 80px 20px;              /* Consistent spacing */
-  max-width: 1200px;               /* Constrain width */
-  margin: 0 auto;                  /* Center horizontally */
+  background: rgba(0, 0, 0, 0.8);
+  border: 3px solid #feb47b;
+  border-radius: 16px;
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
   position: relative;
 }
 
-/* Static Experience Title */
+/* Static Section Title */
 #experience h2 {
   text-align: center;
   font-size: 2rem;
-  color: #fff;                    /* White color */
+  color: #fff;
   margin-bottom: 2rem;
-  /* No animation or hover effect */
 }
 
-/* Experience Content */
+/* Experience Content Styling */
 .experience-content {
   color: #fff;
 }
 
-/* Job Title ("Software Designer") with Continuous Glowing Border Animation */
+/* Job Title ("Software Designer") with a Subtle Glowing Text Effect */
 .experience-content h3 {
   margin-top: 0;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
-  color: #fff;                     /* Base color for the job title */
-  padding: 0.5rem;                 /* Space inside the border */
-  border: 2px solid #feb47b;       /* Golden border */
-  border-radius: 4px;              /* Slight rounding for the border */
-  animation: glowBorder 1.5s ease-in-out infinite alternate;
+  color: #fff;
+  /* Apply continuous text glow animation */
+  animation: glowText 2s infinite;
 }
 
-/* Keyframes for continuous glowing border effect */
-@keyframes glowBorder {
-  from {
-    box-shadow: 0 0 5px #feb47b;
+/* Keyframes for a subtle text glow */
+@keyframes glowText {
+  0%, 100% {
+    text-shadow: 0 0 5px #feb47b;
   }
-  to {
-    box-shadow: 0 0 20px #feb47b;
+  50% {
+    text-shadow: 0 0 10px #feb47b;
   }
 }
 
@@ -187,7 +184,7 @@ section {
   margin: 0;
   font-size: 1.2rem;
   font-weight: normal;
-  color: #fff;                   /* Plain white color */
+  color: #fff;
   margin-bottom: 1rem;
 }
 
@@ -202,9 +199,6 @@ section {
   margin-bottom: 0.5rem;
   line-height: 1.5;
 }
-
-
-
 
 /* 7. Card Container & Project Cards */
 .card-container {
