@@ -135,81 +135,49 @@ section {
 .bubble5 { background: rgba(160, 80, 120, 0.7); }
 
 /* 6. Experience Section */
+/* Single "Card" Container for Experience Section */
 #experience {
-  background: rgba(0, 0, 0, 0.8); /* Dark background for contrast */
-  border: 3px solid rgba(192, 192, 192, 1);      /* Golden border */
+  background: rgba(0, 0, 0, 0.8); /* Dark background */
+  border: 3px solid #feb47b;      /* Golden border */
   border-radius: 16px;            /* Rounded corners */
-  padding: 80px 20px;             /* Same padding as before */
-  max-width: 1200px;              /* Keep the same max width you used previously */
+  padding: 80px 20px;             /* Consistent spacing */
+  max-width: 1200px;              /* Constrain width */
   margin: 0 auto;                 /* Center horizontally */
-  position: relative;             /* Needed for the shine effect positioning */
+  position: relative;
 }
 
-
+/* Title with "Lighting Up" Effect on Hover */
 #experience h2 {
   text-align: center;
   font-size: 2rem;
-  color: #feb47b;       /* Base gold color */
+  color: #feb47b;               /* Base gold color */
   margin-bottom: 2rem;
-  position: relative;   /* Allows the pseudo-element for shine */
-  overflow: hidden;     /* Hides the moving gradient */
+  transition: text-shadow 0.3s ease;
 }
 
-
-#experience h2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -50%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    transparent 0%,
-    rgba(254, 180, 123, 0.6) 50%,
-    transparent 100%
-  );
-  transform: skewX(-20deg);
-  transition: all 0.3s ease;
-  pointer-events: none;
+#experience h2:hover {
+  text-shadow: 0 0 10px #feb47b, 0 0 20px #feb47b, 0 0 30px #feb47b;
 }
 
-
-#experience h2:hover::before {
-  animation: shine 1s ease forwards;
-}
-
-@keyframes shine {
-  0% {
-    left: -50%;
-  }
-  100% {
-    left: 200%;
-  }
-}
-
+/* Experience Content Styles */
 .experience-content {
   color: #fff;
 }
 
-/* Sub-Title (Job Title) */
 .experience-content h3 {
   margin-top: 0;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
-  color: #fff; /* White or any contrasting color */
 }
 
-/* Company Name */
 .experience-content h4 {
   margin: 0;
   font-size: 1.2rem;
   font-weight: normal;
-  color: #feb47b; /* Golden accent for the company name */
+  color: #feb47b; /* Golden accent for company name */
   margin-bottom: 1rem;
 }
 
-/* Bulleted List */
 .experience-content ul {
   list-style: disc inside;
   margin: 0;
