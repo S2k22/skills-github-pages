@@ -355,6 +355,24 @@ section {
   }
 }
 
+/* Bubble around the About Me content with a black background */
+.about-bubble {
+  background: #000;  /* Solid black background */
+  border: 3px solid rgba(254, 180, 123, 1); /* Border color similar to your cards */
+  border-radius: 9999px;  /* Fully rounded bubble */
+  padding: 2rem;  /* Adjust as needed to comfortably wrap your content */
+  margin: 0 auto;
+  max-width: 800px;  /* Limit the width for better readability */
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animations matching your card styles */
+.about-bubble:hover {
+  transform: translateY(-3px);
+  border-color: #feb47b;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 
 
 
