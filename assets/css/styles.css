@@ -254,9 +254,9 @@ section {
 .background-apple {
   position: absolute;
   top: 35%;
-  right: 30px;
+  right: 0px;
   transform: translateY(-50%);
-  width: 30vw;       /* Responsive width based on viewport */
+  width: 25vw;       /* Responsive width based on viewport */
   max-width: 700px;  /* Prevents it from becoming too large */
   pointer-events: none;
   z-index: 9999;
