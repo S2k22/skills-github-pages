@@ -253,7 +253,7 @@ section {
 .background-apple {
   position: absolute;
   top: 50%;
-  right: 50px;
+  right: 60px;
   transform: translateY(-50%);
   width: 30vw;       /* Responsive width based on viewport */
   max-width: 700px;  /* Prevents it from becoming too large */
@@ -282,7 +282,7 @@ section {
 @media (min-width: 1024px) and (max-width: 1440px) {
   .background-apple {
     top: 35%;       /* Default vertical center */
-    right: 60px;    /* Default horizontal offset */
+    right: 70px;    /* Default horizontal offset */
     width: 25vw;    /* Or adjust as needed */
   }
 }
