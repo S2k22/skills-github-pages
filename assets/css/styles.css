@@ -371,7 +371,7 @@ section {
 /* Decorative image styled as a background element (does not affect layout) */
 .background-decorative {
   position: absolute;
-  left: 40px;             /* Adjust horizontal position as needed */
+  left: 20px;             /* Adjust horizontal position as needed */
   top: 70%;               /* Adjust vertical position as needed */
   transform: translateY(-50%);
   width: 30vw;
