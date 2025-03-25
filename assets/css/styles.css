@@ -421,6 +421,18 @@ section {
   }
 }
 
+@media (min-width: 3840px) {
+  .background-decorative {
+    position: absolute;
+    top: 150%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 800px; /* Increase from 850px to scale up for 4K, or adjust as desired */
+    pointer-events: none;
+    z-index: 9999;
+  }
+}
+
 /* Bubble around the About Me content with a black background */
 .about-bubble {
   background: #000;  /* Solid black background */
